@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>主页</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .clearfix:after {
+            content: "";
+            display: block;
+            height: 0;
+            visibility: hidden;
+            clear: both;
+        }
+
+        .clearfix {
+            *zoom: 1;
+        }
+
+        body {
+            background: url(https://res-static.hc-cdn.cn/cloudbu-site/intl/zh-cn/wangxue/solution/E-Commerce.jpg) no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .content {
+            width: 900px;
+            height: 500px;
+            margin: 200px auto 0 auto;
+            border-radius: 10px;
+            background-color: rgba(236, 236, 236, 0.59);
+            transition: all 1.0s;
+        }
+
+        .content img {
+            float: left;
+            width: 200px;
+            height: 200px;
+            margin: 150px 0 0 80px;
+            border-radius: 100px;
+
+        }
+
+        .content:hover {
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.52);
+        }
+
+        .content_r {
+            float: right;
+            width: 500px;
+            margin: 80px 60px 0 0;
+        }
+
+        .content_l {
+            float: left;
+            width: 100%;
+            text-align: center;
+        }
+
+        .content_l h5 {
+            font-size: 17px;
+        }
+
+        .p1 {
+            margin-top: 10px;
+            color: #1F2023;
+            font-size: 18px;
+        }
+
+        .p2 {
+            color: BlueViolet;
+            font-size: 20px;
+        }
+
+        .link {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .link a {
+            display: block;
+            float: left;
+            width: 120px;
+            height: 45px;
+            margin: 5px 15px 0 0;
+            color: #fff;
+            line-height: 45px;
+            transition: all 0.8s;
+        }
+
+        .limegreen {
+            background-color: LimeGreen;
+        }
+
+        .darkorange {
+            background-color: DarkOrange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <img src="data:image/png;base64,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" alt="">
+        <div class="content_r clearfix">
+            <div class="content_l clearfix">
+                <h2>Hi~ 我是${name}，欢迎来到我的主页</h2>
+                <p class="p1">一个掌握了流量密码的Serverless产品！</p>
+                <p class="p1">一个让你从资源运维中解放出来的利器！</p>
+                <br>
+                <br>
+                <p class="p2">${mottoCN}</p>
+                <p class="p2">${mottoEN}</p>
+                <div class="link">
+                    <a href="https://www.huaweicloud.com/product/functiongraph.html" class="limegreen" target="_blank">官网</a>
+                    <a href="https://www.cnblogs.com/huaweiyun/p/15975226.html" class="darkorange" target="_blank">资讯</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
